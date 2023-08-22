@@ -1,0 +1,17 @@
+@{
+    ViewData["Title"] = "Fin";
+}
+
+ <div class="mensajeFinal">
+    <h1>¡Felicitaciones <b>@ViewBag.Usuario</b>!</h1>
+    <h2>Tu puntaje final: @ViewBag.Puntaje puntos</h2>
+</div>
+<div class="centrado">
+    <ol>
+    @foreach (var item in ViewBag.Ranking)
+    {
+        <li><b>@item.Nombre</b>: @item.Puntaje pts</li>
+    }
+    </ol>
+    <a href='@Url.Action("ConfigurarJuego")'><button class="btn btn-primary">Volver a Jugar</button></a>
+</div>

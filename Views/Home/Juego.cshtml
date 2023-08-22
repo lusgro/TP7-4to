@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Juego";
+}
+
+<div class="puntaje">
+    <h4>Pts: <i>@ViewBag.Puntaje</i></h4>
+</div>
+<div class="centrado">
+    <div class="superior">
+        <img src="/images/categorias/@ViewBag.CatFoto" alt="Logo Categoria" class="logoCategoria"/>
+        <p class="pregunta">@ViewBag.Pregunta.Enunciado</p>
+    </div>
+    <form method="post" action='@Url.Action("VerificarRespuesta")' class="respuestas">
+        <input type="hidden" name="idPregunta" value="@ViewBag.Pregunta.IdPregunta" />
+        @foreach (var respuesta in ViewBag.Respuestas)
+        {
+            <input type="radio" name="idRespuesta" id="@respuesta.Opcion" value="@respuesta.IdRespuesta" required/>
+            <label for="@respuesta.Opcion" class="respuesta">@respuesta.Contenido</label>
+        }
+
+        <button type="submit" class="btn btn-primary envioRespuesta">Enviar Respuesta</button>
+    </form>
+</div>

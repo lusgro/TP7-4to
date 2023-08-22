@@ -1,0 +1,9 @@
+@{
+    ViewData["Title"] = "Respuesta";
+}
+
+<div class="centrado">
+    <h3 style="color: @ViewBag.Color">@ViewBag.Conclusion</h3>
+    <p class="respuestaCorrecta">@ViewBag.Mensaje</p>
+    <a href='@Url.Action("Jugar")'><button class="btn btn-primary envioRespuesta">Continuar</button></a>
+</div>

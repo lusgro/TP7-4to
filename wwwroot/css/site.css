@@ -1,0 +1,200 @@
+@font-face {
+  font-family: "Brandon";
+  src: url("../fonts/BrandonText-Regular.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Mikado";
+  src: url("../fonts/MikadoBold.woff") format("truetype");
+}
+
+nav {
+  margin-bottom: 18vh;
+}
+
+nav .navbar-brand img {
+  width: 14%;
+}
+
+nav .navbar-text {
+  font-family: "Mikado", sans-serif;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0;
+}
+
+nav .navbar-text:hover {
+  border-bottom: 1px solid white;
+}
+
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centrado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 50vh;
+}
+
+.logoHome {
+  width: 20%;
+}
+
+.botonInicio button {
+  margin-top: 0.8rem;
+  width: 210px;
+  height: 78px;
+  border: 3px solid #315cfd;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: transparent;
+  font-size: 1.2em;
+  font-family: "Mikado", sans-serif;
+}
+
+.botonInicio button:hover {
+  background: #315cfd;
+  color: white;
+  font-size: 1.5em;
+}
+
+.formlabel {
+  font-family: "Mikado", sans-serif;
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
+select,
+input {
+  font-family: "Brandon", sans-serif;
+  font-size: 1.2em;
+}
+
+.puntaje {
+  position: absolute;
+  top: 24%;
+  right: 2rem;
+  margin-right: 4rem;
+}
+
+.puntaje h4 {
+  font-family: "Brandon", sans-serif;
+  font-size: 2em;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 0.6rem;
+  border: 3px solid white;
+}
+
+.puntaje i {
+  font-family: "Mikado", sans-serif;
+  font-size: 2.5em;
+  font-style: normal;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.superior {
+  display: flex;
+  flex-direction: row;
+  max-width: 45%;
+}
+
+.logoCategoria {
+  width: 17%;
+}
+
+.pregunta {
+  font-family: "Mikado", sans-serif;
+  font-size: 1.5em;
+  word-wrap: normal;
+  display: flex;
+  align-items: center;
+  margin-left: 0.8rem;
+}
+
+.respuestas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input[type="radio"] {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+  margin: 0.5rem;
+}
+
+.respuesta {
+  display: table-cell;
+  vertical-align: middle;
+  min-width: 30%;
+  text-align: center;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-family: "Brandon", sans-serif;
+  font-size: 1.1em;
+  border: 3px solid white;
+  transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+}
+
+input[type="radio"]:hover + label {
+  background-color: #dbdbdb;
+  border: 3px solid #dbdbdb;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+}
+
+input[type="radio"]:checked + label {
+  border: 3px solid #5277fc;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+}
+
+.envioRespuesta {
+  margin-top: 1.5rem;
+}
+
+h3 {
+  font-family: "Mikado", sans-serif;
+  font-size: 3.5em;
+  margin-bottom: 0;
+}
+
+.respuestaCorrecta {
+  font-family: "Brandon", sans-serif;
+  font-size: 1.5em;
+}
+
+.mensajeFinal {
+  margin-left: 3.3rem;
+}
+
+h1 {
+  font-family: "Mikado", sans-serif;
+  font-size: 3.5em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: "Brandon", sans-serif;
+  font-size: 2.2em;
+  margin-bottom: 0;
+}
+
+li {
+  font-family: "Brandon", sans-serif;
+  font-size: 1.5em;
+}
